@@ -1,12 +1,30 @@
-.btn-area{
-    padding: 40rpx 20rpx;
+.search input {
+   height: 10rpx;
+   margin: 0 20rpx;
+   border: navajowhite solid 1rpx;
+   border-radius: 25rpx;
+   text-align: center;
 }
-.btn-area navigator{
-    display: block;
-    background: white;
-    color: #1C1F27;
-    text-align: center;
-    margin-bottom: 20rpx;
-    padding: 10rpx 0;
-    border-radius: 4px;
+.head {
+   display: flex;
+   height: 100rpx;
+   flex-direction: row;
+   margin: 20rpx 20rpx;
+   justify-content: space-around;
+}
+.content-title {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0 30rpx;
+   color: #77AA55;
+}
+.stock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25rpx 25rpx;
+}
+.stock .price {
+    padding-top: 10rpx;
 }

@@ -1,6 +1,51 @@
 <view class="container">
-    <view class="btn-area">
-        <navigator url="../ts/ts" hover-class="navigator-hover" open-type="switchTab">查看 分时图demo</navigator>
-        <navigator url="../kl/kl" hover-class="navigator-hover" open-type="switchTab">查看 K线图demo</navigator>
+    <view class="search">
+        <input placeholder='请输入股票代码/全屏/首字母' confirm-type='search' bindinput="bindSearch"/>
+    </view>
+    <view class="head">
+        <view>上证指数</view>
+        <view>深证成指</view>
+        <view>创业板指</view>
+    </view>
+    <view class="content-title">
+        <view>全部股票</view>
+        <view>最新价</view>
+        <view>涨跌幅</view>
+    </view>
+    <view class="content" wx:for="{{stocks}}">
+        <view class="stock">
+            <view>
+                <view>{{item.name}}</view>
+                <view>{{item.code}}</view>
+            </view>
+            <view class="price">{{item.price}}</view>
+            <view>{{item.pft}}</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="stock">
+            <view>
+                <view>财信发展</view>
+                <view>000838</view>
+            </view>
+            <view class="price">6.59</view>
+            <view>停牌</view>
+        </view>
+        <view class="stock">
+            <view>
+                <view>罗牛山</view>
+                <view>000735</view>
+            </view>
+            <view class="price">6.12</view>
+            <view class="price">-0.66%</view>
+        </view>
+        <view class="stock">
+            <view>
+                <view>中国国行</view>
+                <view>601111</view>
+            </view>
+            <view class="price">9.25</view>
+            <view class="price">-2.22%</view>
+        </view>
     </view>
 </view>

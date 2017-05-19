@@ -8,12 +8,13 @@ App({
         var logs = wx.getStorageSync('logs') || [];
         logs.unshift(Date.now());
         wx.setStorageSync('logs', logs);
+        console.log('onLaunch');
     },
-    onShow: function () {
-        //todo
+    onShow: function (option) {
+        console.log(option);
     },
     onHide: function () {
-        //todo
+        console.log('onHide');
     },
     getUserInfo: function (cb) {
         var that = this;
